@@ -8,11 +8,11 @@ basic.forever(function () {
     Spænding,
     0,
     1023,
-    100000,
+    33000,
     10000
     )
     pins.analogSetPeriod(AnalogPin.P0, Periodetid)
-    pins.analogWritePin(AnalogPin.P0, 248)
+    pins.analogWritePin(AnalogPin.P0, 128)
 })
 basic.forever(function () {
     basic.showNumber(Math.round(1000000 / Periodetid))
